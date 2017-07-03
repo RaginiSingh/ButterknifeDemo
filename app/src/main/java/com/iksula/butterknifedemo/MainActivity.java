@@ -41,9 +41,16 @@ public class MainActivity extends AppCompatActivity
         Toast.makeText(MainActivity.this, "Hi " + edtUsername.getText().toString(), Toast.LENGTH_LONG).show();
     }
 
+    public void logout()
+    {
+
+        Toast.makeText(MainActivity.this, "logged out successfully.", Toast.LENGTH_LONG).show();
+    }
+
     @Override
     public boolean onCreateOptionsMenu(Menu menu)
     {
+
         getMenuInflater().inflate(R.menu.menu_main, menu);
         return true;
     }
